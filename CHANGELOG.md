@@ -1,5 +1,11 @@
 # tws-first-package
 
+## 1.0.4
+
+### Patch Changes
+
+- bc8d133: README change
+
 ## 1.0.3
 
 ### Patch Changes

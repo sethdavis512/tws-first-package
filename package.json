@@ -1,6 +1,6 @@
 {
   "name": "tws-first-package",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A new npm package: tws-first-package",
   "keywords": [
     "typescript",
@@ -29,7 +29,7 @@
     "format": "prettier --write .",
     "check-format": "prettier --check .",
     "changeset": "changeset",
-    "release": "changeset version && changeset publish",
+    "release": "changeset version",
     "prepublishOnly": "npm run ci"
   },
   "license": "MIT",
