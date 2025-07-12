@@ -1,0 +1,41 @@
+{
+  "name": "tws-first-package",
+  "version": "1.0.0",
+  "description": "A new npm package: tws-first-package",
+  "keywords": [
+    "typescript",
+    "package"
+  ],
+  "homepage": "https://github.com/sethdavis512/tws-first-package",
+  "bugs": {
+    "url": "https://github.com/sethdavis512/tws-first-package/issues"
+  },
+  "author": "Seth Davis <techwithseth512@gmail.com> (https://sethdavis.tech)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sethdavis512/tws-first-package.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "dev": "vitest",
+    "ci": "npm run build && npm run check-format && npm run test",
+    "format": "prettier --write .",
+    "check-format": "prettier --check .",
+    "local-release": "changeset version && changeset publish",
+    "prepublishOnly": "npm run ci"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@changesets/cli": "^2.29.5",
+    "prettier": "^3.6.2",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
+}
